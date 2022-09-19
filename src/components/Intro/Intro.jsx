@@ -18,7 +18,7 @@ const Intro = () => {
         initial={{x : '-150vw'}}
         animate={{x : 0}}
         >
-        Luxury, Quality <br /> & Comfort
+        Luxury, Quality <br /> & Comfort .
         </motion.span>
         <img className="d-block i-images"
         initial={{x : '150vw'}}
@@ -34,7 +34,7 @@ const Intro = () => {
         initial={{x : '-150vw'}}
         animate={{x : 0}}
       >
-      Revive Your Mind,<br /> Body & Spirit
+      Revive Your Mind,<br /> Body & Spirit .
       </span>
         <motion.img className="d-block i-images"
         initial={{x : '150vw'}}

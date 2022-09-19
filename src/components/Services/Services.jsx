@@ -12,8 +12,8 @@ const Services = () => {
     transition={{duration : 5}}
     >
        <div className="s-title">
-        <h6>ROYAL SKINCARE</h6>
-        <h2>Spa Services</h2>
+        <h6 className='s-h6'>ROYAL SKINCARE</h6>
+        <h2 className='s-h2'>Spa Services</h2>
         <p className='s-text'>Experience an extensive menu of both modern and timeless treatments</p>
        </div>
 

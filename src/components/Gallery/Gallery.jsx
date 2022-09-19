@@ -17,12 +17,11 @@ const Gallery = () => {
         <div className='g-container'>
           <h2 className='g-title'>GALLERY</h2>
            <img className='g-selected' src={selectedImg} alt="" />
-           <div className="g-img-con">
-
+          
            <div className='g-bottom'>
            {images.map((img, index) => {
             return(
-                <img style={{border: selectedImg === img ? "4px solid purple" : ""}}
+                <img style={{border: selectedImg === img ? "3px solid purple" : ""}}
                  key={index}
                  src={img}
                  alt="gallery"
@@ -30,7 +29,6 @@ const Gallery = () => {
             )
              })}
              </div>
-           </div>
         </div>  
      </motion.div>  
     );

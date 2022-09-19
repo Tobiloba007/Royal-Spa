@@ -22,3 +22,25 @@
     padding: 100px 0px 0px 80px;
     color: #880085;
 }
+
+
+@media (max-width: 425px){
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .i-message{
+        font-size: 30px;
+        font-weight: 450;
+        z-index: 5;
+        margin-top: 15px;
+    }
+
+    .i-images{
+        position: relative;
+        height: 230px;
+        width: 100%;
+    }
+  }

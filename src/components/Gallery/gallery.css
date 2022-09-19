@@ -6,8 +6,10 @@
 
 .g-wrapper{
     width: 100%;
-    background: white;
+    background: #ffffff;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url('https://images.unsplash.com/photo-1524055988636-436cfa46e59e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
     background-repeat: no-repeat;
     background-size: 30%;
@@ -23,27 +25,17 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
-    width: 75%;
-    min-width: 540px;
+    margin: 15px 0px 0px 0px;
 }
 
 .g-title{
     margin: 20px 0px;
 }
 
-.g-container .g-selected {
+.g-selected {
     width: 55vw;
     height: 50vh;
     border: 5px solid rgb(210, 158, 210);
-}
-
-.g-container .g-img-con{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 40px 0px 0px 0px;
 }
 
 .g-bottom{
@@ -51,10 +43,46 @@ img{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 15px;
+    margin: 15px 0px;
 }
 
-.g-container .g-img-con img {
-    width: 200px;
-    height: 80px;
+
+
+@media (max-width: 425px) {
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .g-selected {
+        width: 90vw;
+        height: 50vh;
+        border: 3px solid rgb(210, 158, 210);
+    }
+
+    .g-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0px;
+    }
+
+    img{
+        width: 100px;
+        height: 40px;
+    }
+
+    .g-wrapper{
+        width: 100%;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('https://images.unsplash.com/photo-1524055988636-436cfa46e59e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        object-fit: cover;
+    }
+
 }

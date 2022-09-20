@@ -3,16 +3,36 @@ import './gallery.css'
 import images from '../images';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import {useInView} from 'react-intersection-observer'
+import { useEffect } from 'react'
+import { useAnimation } from 'framer-motion'
 
 
 const Gallery = () => {
     const [selectedImg, setSelectedImg] = useState(images[0]);
 
+    const {ref, inView} = useInView();
+    const animation = useAnimation();
+  
+    useEffect(() => {
+      // console.log("section in view", inView)
+      if(inView){
+        animation.start({
+           x : 0,
+           transition: {
+           type: 'spring', duration: 1.5, bounce: 0.3
+          }
+        });
+      }
+      if(!inView){
+        animation.start({x : '100vw'})
+      }
+    }, [inView])
+
     return(
      <motion.div className="g-wrapper"
-     initial={{x : '250vw'}}
-     animate={{x : 0}}
-     transition={{duration : 8}}
+      ref = {ref}
+      animate={animation}
      >
         <div className='g-container'>
           <h2 className='g-title'>GALLERY</h2>

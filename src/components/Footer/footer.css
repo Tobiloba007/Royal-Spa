@@ -52,16 +52,11 @@
     text-align: center;
 }
 
-/* .f-address{
-    text-align: center;
-} */
-
 .f-socials{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 20vw;
-    margin-right: 40px;
 }
 
 .f-soc-icon{
@@ -78,11 +73,6 @@
 
 
 @media (max-width: 425px){
-
-    *{
-        margin: 0px;
-        padding: 0px;
-    }
 
     .f-container{
         background-color: #D8BFD8;

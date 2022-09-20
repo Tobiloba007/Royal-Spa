@@ -3,13 +3,33 @@ import './footer.css'
 import { Link } from 'react-router-dom'
 import {FaInstagram, FaFacebookSquare, FaTwitterSquare, FaWhatsapp} from 'react-icons/fa'
 import {motion} from 'framer-motion'
+import {useInView} from 'react-intersection-observer'
+import { useEffect } from 'react'
+import { useAnimation } from 'framer-motion'
 
 const Footer = () => {
+  const {ref, inView} = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    // console.log("section in view", inView)
+    if(inView){
+      animation.start({
+        y : 0,
+        transition: {
+           duration: 1
+        }
+      });
+    }
+    if(!inView){
+      animation.start({y : '100vw'})
+    }
+  }, [inView])
+
   return (
     <motion.div className="fwrapper"
-    initial={{y : 400}}
-    animate={{y : 0}}
-    transition={{duration : 15}}
+     ref = {ref}
+    animate={animation}
     >
     <div className='f-container'>
 

@@ -69,16 +69,11 @@
 
 @media (max-width: 425px){
 
-    *{
-        margin: 0px;
-        padding: 0px;
-    }
-
     .s-title{
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin: 50px 0px 40px 0px;
+        margin: 50px 0px 25px 0px;
     }
 
     .s-text{
@@ -96,7 +91,9 @@
         justify-content: center;
         overflow-x: scroll;
         white-space: no-wrap;
-        padding-left: 83vw;
+        width: 100%;
+        overflow-x: hidden;
+        padding: 0px 0px 0px 85vw;
     }
 
     .s-img{
@@ -109,7 +106,7 @@
     }
 
     .s-menu-btn{
-        margin: 50px 0px 40px 0px;
+        margin: 25px 0px 40px 0px;
         outline: none;
         border: none;
         color: white;

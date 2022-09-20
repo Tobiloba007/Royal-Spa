@@ -9,8 +9,7 @@ const Intro = () => {
     <motion.div className='i-wrapper'
     initial={{y : '-250vh', opacity : 0}}
     animate={{y : 0, opacity : 1}}
-    transition={{delay : 0.5, duration : 1,}}
-    default={{ease : '5' }}
+    transition={{delay : 0.5, duration : 1, type: 'spring'}}
     >
         <Carousel fade d>
       <Carousel.Item>

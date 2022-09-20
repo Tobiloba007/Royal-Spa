@@ -9,7 +9,7 @@ const Services = () => {
     <motion.div className='s-wrapper'
     initial={{x : '300vw'}}
     animate={{x : 0}}
-    transition={{duration : 5}}
+    transition={{duration : 2}}
     >
        <div className="s-title">
         <h6 className='s-h6'>ROYAL SKINCARE</h6>

@@ -50,11 +50,6 @@ img{
 
 @media (max-width: 425px) {
 
-    *{
-        margin: 0px;
-        padding: 0px;
-    }
-
     .g-selected {
         width: 90vw;
         height: 50vh;

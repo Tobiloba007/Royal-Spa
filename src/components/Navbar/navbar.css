@@ -3,6 +3,13 @@
     padding: 0px;
 }
 
+.nav-con{
+    position: fixed;
+    width: 100vw;
+    z-index: 5;
+    margin-bottom: 50px;
+}
+
 .n-link{
     padding: 12px 20px;
     text-decoration: none;
@@ -12,9 +19,6 @@
 }
 
 @media (max-width: 425px){
-    
-    *{
-        margin: 0px;
-        padding: 0px;
-    }
+
+
 } 

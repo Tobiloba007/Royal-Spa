@@ -4,10 +4,31 @@ import './reviews.css'
 import people from '../reviewsData'
 import {FaChevronLeft, FaChevronRight, FaQuoteRight} from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import {useInView} from 'react-intersection-observer'
+import { useEffect } from 'react'
+import { useAnimation } from 'framer-motion'
 
 const Reviews = () => {
     const [index, setIndex] = useState(0);
     const {name, text, image} = people[index];
+
+    const {ref, inView} = useInView();
+    const animation = useAnimation();
+  
+    useEffect(() => {
+      // console.log("section in view", inView)
+      if(inView){
+        animation.start({
+          x : 0,
+          transition: {
+            type: 'spring', duration: 2, bounce: 0.3
+          }
+        });
+      }
+      if(!inView){
+        animation.start({x : '-100vw'})
+      }
+    }, [inView])
 
     const checkNumber = (number) => {
         if(number > people.length -1){
@@ -34,9 +55,8 @@ const Reviews = () => {
 
   return (
     <motion.div className='r-wrapper'
-    initial={{x : '-250vw'}}
-    animate={{x : 0}}
-    transition={{duration : 11}}
+     ref = {ref}
+    animate={animation}
     >
         <div className="r-top">
             <h2>Our Reviews</h2>

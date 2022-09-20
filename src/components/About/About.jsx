@@ -2,13 +2,36 @@ import React from 'react'
 import './about.css'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import {useInView} from 'react-intersection-observer'
+import { useEffect } from 'react'
+import { useAnimation } from 'framer-motion'
 
 const About = () => {
+  
+  const {ref, inView} = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    // console.log("section in view", inView)
+    if(inView){
+      animation.start({
+        x : 0,
+        transition: {
+          type: 'spring', duration: 1.5, bounce: 0.3
+        }
+      });
+    }
+    if(!inView){
+      animation.start({x : '-100vw'})
+    }
+   // eslint-disable-next-line
+  }, [inView])
+
   return (
-    <motion.div className='ab-wrapper'
-    initial={{x : '-250vw'}}
-    animate={{x : 0}}
-    transition={{duration : 7}}
+    <motion.div
+    className='ab-wrapper'
+     ref = {ref}
+    animate={animation}
     >
       <div className="ab-top">
          <h6>ROYAL SKINCARE</h6>

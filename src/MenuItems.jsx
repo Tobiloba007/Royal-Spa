@@ -1,7 +1,7 @@
 export const MenuItems = [
     {
         id: 1,
-        image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c3BhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        image: "https://images.unsplash.com/photo-1623120594168-a6d35474043b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHNwYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
         service: "FULL BODY MASSAGE" 
     },
     {

@@ -2,35 +2,11 @@ import React from 'react'
 import './footer.css'
 import { Link } from 'react-router-dom'
 import {FaInstagram, FaFacebookSquare, FaTwitterSquare, FaWhatsapp} from 'react-icons/fa'
-import {motion} from 'framer-motion'
-import {useInView} from 'react-intersection-observer'
-import { useEffect } from 'react'
-import { useAnimation } from 'framer-motion'
 
 const Footer = () => {
-  const {ref, inView} = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    // console.log("section in view", inView)
-    if(inView){
-      animation.start({
-        y : 0,
-        transition: {
-           duration: 1
-        }
-      });
-    }
-    if(!inView){
-      animation.start({y : '100vw'})
-    }
-  }, [inView])
 
   return (
-    <motion.div className="fwrapper"
-     ref = {ref}
-    animate={animation}
-    >
+    <div className="fwrapper">
     <div className='f-container'>
 
         <div className="f-links-con">
@@ -60,7 +36,7 @@ const Footer = () => {
     <div className="f-copyright">
     Copyright © 2021 The Mobile Spa | All Rights Reserved.
     </div>
-    </motion.div>
+    </div>
   )
 }
 

@@ -21,10 +21,9 @@
 
 .s-bottom{
     display: flex;
-    align-items: center;
-    justify-content: center;
     overflow-x: scroll;
     white-space: no-wrap;
+    margin-top: 20px;
 }
 
 .s-bottom::-webkit-scrollbar{
@@ -87,13 +86,11 @@
 
     .s-bottom{
         display: flex;
-        align-items: center;
-        justify-content: center;
         overflow-x: scroll;
         white-space: no-wrap;
-        width: 100%;
-        overflow-x: hidden;
-        padding: 0px 0px 0px 85vw;
+        margin-top: 0;
+        padding-left: 38px;
+
     }
 
     .s-img{

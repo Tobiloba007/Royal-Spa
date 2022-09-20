@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 const Services = () => {
   return (
     <motion.div className='s-wrapper'
-    initial={{x : '300vw'}}
+    initial={{x : '100vw'}}
     animate={{x : 0}}
     transition={{duration : 2}}
     >

@@ -28,6 +28,7 @@ const Reviews = () => {
       if(!inView){
         animation.start({x : '-100vw'})
       }
+       // eslint-disable-next-line
     }, [inView])
 
     const checkNumber = (number) => {

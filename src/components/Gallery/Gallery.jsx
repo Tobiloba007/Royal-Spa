@@ -27,6 +27,7 @@ const Gallery = () => {
       if(!inView){
         animation.start({x : '100vw'})
       }
+      // eslint-disable-next-line
     }, [inView])
 
     return(

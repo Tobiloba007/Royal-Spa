@@ -8,11 +8,11 @@ import {Link} from 'react-router-dom'
 
 function OffCanvasExample() {
   return (
-    <>
+    <div className='n-wrapper'>
       {['lg'].map((expand) => (
-        <Navbar key={expand} bg="white" expand={expand} className="mb-0 py-4 nav-con">
+        <Navbar key={expand} bg="white" expand={expand} className="py-1 nav-con">
           <Container fluid>
-            <Navbar.Brand>ROYAL TREAT SKINCARE & SPA</Navbar.Brand>
+            <Navbar.Brand className='n-nav-p'>ROYAL TREAT SKINCARE & SPA</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -21,11 +21,11 @@ function OffCanvasExample() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  ROYAL SKINCARE AND SPA
+                ROYAL TREAT SKINCARE & SPA
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-center align-items-center flex-grow-1 ps-0">
+                <Nav className=" n-nav-links justify-content-center  flex-grow-1 ps-0">
                   <Link className='n-link' to="/">HOME</Link>
                   <Link className='n-link' to="/about">ABOUT</Link>
                   <Link className='n-link' to="/pictures">GALLERY</Link>
@@ -36,7 +36,7 @@ function OffCanvasExample() {
           </Container>
         </Navbar>
       ))}
-    </>
+    </div>
   );
 }
 

@@ -8,10 +8,15 @@
     width: 100vw;
     z-index: 5;
     margin-bottom: 50px;
+    box-shadow: 0px 1px #888888;
+}
+
+.n-img{
+
 }
 
 .n-link{
-    padding: 12px 20px;
+    padding: 30px 20px;
     text-decoration: none;
     color: black;
     font-weight: 600;
@@ -20,5 +25,10 @@
 
 @media (max-width: 425px){
 
+.n-img{
+    height: 50px;
+    width: 100px;
+    margin: 0px;
+}    
 
 } 

@@ -1,6 +1,6 @@
 import React from 'react'
 import './services.css'
-import { MenuItems } from '../../MenuItems'
+import MenuItems from '../../MenuItems'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
@@ -12,7 +12,7 @@ const Services = () => {
     transition={{duration : 2}}
     >
        <div className="s-title">
-        <h6 className='s-h6'>ROYAL SKINCARE</h6>
+        <h6 className='s-h6'>ROYAL TREAT SPA</h6>
         <h2 className='s-h2'>Spa Services</h2>
         <p className='s-text'>Experience an extensive menu of both modern and timeless treatments</p>
        </div>
@@ -22,7 +22,8 @@ const Services = () => {
         return(
        <div className="s-menu-list">
               <img className="s-img" src={item.image} alt="body massage" />     
-             <h5 className='s-menu-item'>{item.service}</h5>
+             <h5 className='s-menu-item' >{item.service}</h5>
+              <p className='s-menu-price'>{item.price}</p>
        </div>
        )})}
        </div>

@@ -42,11 +42,7 @@ const Intro = () => {
           src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3BhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           alt="Second slide"
         />
-
-        {/* <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption> */}
+        
       </Carousel.Item>
     </Carousel>
     </motion.div>

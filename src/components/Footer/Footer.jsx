@@ -22,8 +22,8 @@ const Footer = () => {
 
         <div className="f-contact">
              <h6>CONTACTS</h6>
-            <div className="f-phone">09090529118</div>
-            <div className="f-address">No 11, Ajanlekoko, tuale, Lagos Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+            <h5 className="f-phone">0813 809 4256</h5>
+            <div className="f-address">Tulip heaven estate chevron lekki, Mayfair roundabout, beside MTN office (the purple and white building opposite Oriolokun) Ile ife.</div>
         </div>
 
         <div className="f-socials">
@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
     </div>
     <div className="f-copyright">
-    Copyright © 2021 The Mobile Spa | All Rights Reserved.
+    Copyright © 2022 Royal Treat Spa | All Rights Reserved.
     </div>
     </div>
   )

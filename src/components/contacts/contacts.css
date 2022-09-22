@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.c-con{
+    width: 50%;
+    margin: 0px 0px 20px 350px;
+}
+
+.c-btn{
+    background-color: #880085;
+}
+
+@media (max-width: 425px){
+    .c-con{
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+}

@@ -29,7 +29,7 @@ function OffCanvasExample() {
                   <Link className='n-link' to="/">HOME</Link>
                   <Link className='n-link' to="/about">ABOUT</Link>
                   <Link className='n-link' to="/pictures">GALLERY</Link>
-                  <Link className='n-link' to="/contact">CONTACT US</Link>
+                  <Link className='n-link' to="/contacts">CONTACT US</Link>
                   </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

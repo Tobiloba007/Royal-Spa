@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css'
 import { Link } from 'react-router-dom'
-import {FaInstagram, FaFacebookSquare, FaTwitterSquare, FaWhatsapp} from 'react-icons/fa'
+import {FaInstagram, FaFacebookSquare, FaTwitterSquare, FaWhatsapp  } from 'react-icons/fa'
 
 const Footer = () => {
 
@@ -30,7 +30,7 @@ const Footer = () => {
             <p className='f-soc-icon'><Link to="/"><FaInstagram fontSize="35px" color='purple' /></Link></p>
             <p className='f-soc-icon'><Link to="/"><FaFacebookSquare fontSize="35px" color='Blue' /></Link></p>
             <p className='f-soc-icon'><Link to="/"><FaTwitterSquare fontSize="35px" color='teal' /></Link></p>
-            <p className='f-soc-icon'><Link to="/"><FaWhatsapp fontSize="35px" color='green' /></Link></p>
+            <p className='f-soc-icon'><a href="http://wa.me/+2349037777435"><FaWhatsapp fontSize="35px" color='green' /></a></p>
         </div>
     </div>
     <div className="f-copyright">

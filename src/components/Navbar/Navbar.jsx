@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {Link} from 'react-router-dom'
+import {RiWhatsappFill} from 'react-icons/ri'
 
 function OffCanvasExample() {
   return (
@@ -36,6 +37,11 @@ function OffCanvasExample() {
           </Container>
         </Navbar>
       ))}
+      <div className='n-icon-con'>
+      <a href="http://wa.me/+2349037777435">
+      <RiWhatsappFill className='n-icon' color='green' />
+      </a>
+      </div>
     </div>
   );
 }

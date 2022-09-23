@@ -30,6 +30,22 @@
     font-size: 17px;
 }
 
+.n-icon-con{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 120px;
+    font-size: 80px;
+}
+
+.n-icon{
+    position: fixed;
+    bottom: 5%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
 @media (max-width: 425px){  
 
 .nav-con{
@@ -48,5 +64,25 @@
    margin-left: 0;
    align-items: center;
 }
+
+.n-icon-con{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+    font-size: 60px;
+}
+
+.n-icon{
+    position: fixed;
+    bottom: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+.n-icon a:hover {
+    background-color: #000;
+  }
 
 } 

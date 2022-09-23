@@ -1,10 +1,17 @@
 import React from 'react'
 import './services.css'
 import MenuItems from '../../MenuItems'
-import { Link } from 'react-router-dom'
+import {saveAs} from 'file-saver';
+// import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import spaMenu from '../../resources/Spamenu.jpg'
 
 const Services = () => {
+
+  const downloadImg = () => {
+    saveAs(spaMenu, 'spaMenu.jpg');
+  };
+
   return (
     <motion.div className='s-wrapper'
     initial={{x : '100vw'}}
@@ -28,7 +35,8 @@ const Services = () => {
        )})}
        </div>
        <div className='s-btn'>
-      <button className='s-menu-btn'><Link className='s-link' to="/services">SEE OUR SPA MENU</Link></button>
+      <button className='s-menu-btn' onClick={downloadImg}>
+      SEE OUR SPA MENU</button>
        </div>
     </motion.div>
   )
